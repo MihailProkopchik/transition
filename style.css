@@ -1,0 +1,118 @@
+div > div{
+    width: 200px;
+    height: 200px;
+    background-image: url("car.jpg");
+    position: absolute;
+    transition-property: left,top,bottom,right;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+input {
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+.block1 {
+    border: 1px solid black;
+    width: 900px;
+    height: 900px;
+    position: relative;      
+}
+
+input:checked + .block1 .block2 { 
+    left: 150px;
+    top: 150px; 
+}
+
+input:checked + .block1 .block3 {
+    top: 150px;
+}
+
+input:checked + .block1 .block4 {
+    right: 150px;
+    top: 150px;   
+}
+
+input:checked + .block1 .block5 {
+    left: 150px;   
+}
+
+input:checked + .block1 .block7 {
+    right: 150px;   
+}
+
+input:checked + .block1 .block8 {
+    left: 150px;
+    bottom: 150px;   
+}
+
+input:checked + .block1 .block9 {
+    bottom: 150px;   
+}
+
+input:checked + .block1 .block10 {
+    right: 150px;
+    bottom: 150px;   
+} 
+
+
+.block2 {
+    background-position: left top;
+    top: 0;
+    left: 0;  
+}
+
+.block3 {
+    background-position: top;
+    left: 350px;
+    top: 0;
+
+}
+
+.block4 {
+    background-position: right top;
+    right: 0;
+    top: 0;
+}
+
+.block5 {
+    background-position: left;
+    left: 0px;
+    bottom: 350px;
+
+}
+
+.block6 {
+    left: 350px;
+    top: 350px;
+    background-position: center;
+}
+
+.block7 {
+    background-position: right;
+    right: 0px;
+    bottom: 350px;
+}
+
+.block8 {
+    background-position: left bottom;
+    left: 0px;
+    bottom: 0px;
+}
+
+.block9 {
+    background-position: bottom;
+    bottom: 0px;
+    left: 350px;
+}
+
+.block10 {
+    background-position: right bottom;
+    bottom: 0px;
+    right: 0px;
+}
+
